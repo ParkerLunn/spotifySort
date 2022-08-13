@@ -2,15 +2,15 @@ import spotipy
 import os
 from spotipy.oauth2 import SpotifyClientCredentials, SpotifyOAuth
 
-os.environ["SPOTIPY_CLIENT_ID"]='2a5689d36ad648fc90db4f2354679d5a'
-os.environ["SPOTIPY_CLIENT_SECRET"]='e4510eb5bbed49d2bae960b04f78d52e'
+os.environ["SPOTIPY_CLIENT_ID"]=''
+os.environ["SPOTIPY_CLIENT_SECRET"]=''
 os.environ["SPOTIPY_REDIRECT_URI"]='http://localhost:8081'
 
 library_scope = 'user-library-read'
 playlist_scope = 'playlist-modify-public'
 
 
-# sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(client_id='2a5689d36ad648fc90db4f2354679d5a', client_secret='e4510eb5bbed49d2bae960b04f78d52e'))
+# sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(client_id='', client_secret=''))
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=library_scope))
 
 
